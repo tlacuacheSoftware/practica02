@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 23/03/2016 06:56:21 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Pojo.UsuarioPublicar" table="usuario_publicar" schema="public" optimistic-lock="version">
+        <composite-id name="id" class="Pojo.UsuarioPublicarId">
+            <key-property name="usuarioidusuario" type="int">
+                <column name="usuarioidusuario" />
+            </key-property>
+            <key-property name="publicaridpublicar" type="int">
+                <column name="publicaridpublicar" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>
